@@ -16,9 +16,24 @@ def first_star(commands):
     print(answer)
 
 
+def second_star(commands):
+    position = [0, 0, 0]  # [horizontal, vertical, aim]
+    for command in commands:
+        if command[0] == 'forward':
+            position[0] += command[1]
+            position[1] += command[1] * position[2]
+        if command[0] == 'down':
+            position[2] += command[1]
+        if command[0] == 'up':
+            position[2] -= command[1]
+    answer = position[0] * position[1]
+    print(answer)
+
+
 def main():
     commands = read_input()
     first_star(commands)
+    second_star(commands)
 
 
 if __name__ == '__main__':
