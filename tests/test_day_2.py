@@ -7,4 +7,4 @@ day_2_star_1_test_input = [([('forward', 5), ('down', 5), ('forward', 8), ('up',
 def test_day_2_star_1(capsys, input, output):
     first_star(input)
     captured = capsys.readouterr()
-    assert int(captured.out) == 150
+    assert int(captured.out) == output
