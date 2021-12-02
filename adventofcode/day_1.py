@@ -1,6 +1,5 @@
 def read_input():
-    with open('../puzzle_inputs/day_1.txt') as file:
-        return [int(line.strip()) for line in file.read().split()]
+    return [int(line.strip()) for line in open('../puzzle_inputs/day_1.txt').read().split()]
 
 
 def first_star(sonar_readings):
