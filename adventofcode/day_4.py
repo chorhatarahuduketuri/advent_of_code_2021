@@ -45,7 +45,20 @@ def first_star(bingo_game):
 
 
 def second_star(bingo_game):
-    pass
+    numbers = bingo_game[0]
+    boards = bingo_game[1:]
+    finished_boards = []
+    last_number = -1
+    last_score = -1
+    for number in numbers:
+        for i, board in enumerate(boards):
+            if i not in finished_boards:
+                boards[i] = mark_board(boards[i], number)
+                if check_board_for_line(boards[i]):
+                    finished_boards.append(i)
+                    last_number = number
+                    last_score = score_board(boards[i], number)
+    print(last_score)
 
 
 def main():
