@@ -26,7 +26,21 @@ def test_day_3_star_1(capsys, input, output):
     assert int(captured.out) == output
 
 
-day_3_star_2_test_input = [([''], 0)]
+day_3_star_2_test_input = [
+    (['00100',
+      '11110',
+      '10110',
+      '10111',
+      '10101',
+      '01111',
+      '00111',
+      '11100',
+      '10000',
+      '11001',
+      '00010',
+      '01010'],
+     230)
+]
 
 
 @pytest.mark.parametrize(["input", "output"], day_3_star_2_test_input)
