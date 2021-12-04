@@ -5,7 +5,7 @@ This year I'm planning to ~~over engineer~~ have better infrastructure for my co
 Hopefully this will include: 
 
 - pytest
-- black and flake8
+- ~~black and flake8~~ absolutely not they ruin my beautiful list comprehensions
 - GitHub Actions
 - Perhaps a decorator?
 - The totally ~~unnecessary~~ reasonable use of a context manager
