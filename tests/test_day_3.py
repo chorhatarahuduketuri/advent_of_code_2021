@@ -1,6 +1,6 @@
 import pytest
 
-from day_3 import first_star, second_star
+from adventofcode.day_3 import first_star, second_star
 
 day_3_star_1_test_input = [
     (['00100',

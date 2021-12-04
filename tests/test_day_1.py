@@ -1,6 +1,6 @@
 import pytest
 
-from day_1 import first_star, second_star
+from adventofcode.day_1 import first_star, second_star
 
 day_1_star_1_test_input = [([199, 200, 208, 210, 200, 207, 240, 269, 260, 263], 7)]
 
