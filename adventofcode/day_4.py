@@ -1,5 +1,15 @@
 def read_input():
-    pass
+    return [
+        [
+            [int(number) for number in line.split()]
+            for line
+            in number_block.strip().split('\n')
+        ]
+        if ',' not in number_block else
+        [int(number) for number in number_block.split(',')]
+        for number_block
+        in open('../puzzle_inputs/day_4.txt').read().strip().split('\n\n')
+    ]
 
 
 def first_star(sonar_readings):
@@ -11,9 +21,9 @@ def second_star(sonar_readings):
 
 
 def main():
-    input = read_input()
-    first_star(input)
-    second_star(input)
+    bingo_game = read_input()
+    first_star(bingo_game)
+    second_star(bingo_game)
 
 
 if __name__ == '__main__':
